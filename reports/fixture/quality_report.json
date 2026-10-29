@@ -1,0 +1,42 @@
+{
+  "pipeline_version": 1,
+  "input_files": 8,
+  "accepted_sessions": 2,
+  "rejected_files": 6,
+  "rejection_reasons": {
+    "demo_session": 1,
+    "duplicate_session": 1,
+    "empty_session": 1,
+    "incomplete_turn": 1,
+    "invalid_json": 1,
+    "invalid_role_order": 1
+  },
+  "redactions_in_accepted_sessions": {
+    "api_key": 0,
+    "email": 1,
+    "phone": 1
+  },
+  "train_examples": 3,
+  "eval_examples": 0,
+  "accepted_source_modes": {
+    "synthetic": 1,
+    "unknown": 1
+  },
+  "config": {
+    "eval_percent": 20,
+    "split_unit": "session",
+    "redaction_rules": [
+      "api_key",
+      "email",
+      "phone"
+    ],
+    "dedup": "normalized_redacted_session"
+  },
+  "output_sha256": {
+    "sessions.jsonl": "7c6610ad6507b38a3cbf1192b60b07109cca2b14f5355698e340989fc1edadb8",
+    "sft_train.jsonl": "f7cdfbc2f1277fe836caa10ed7de0409ca533c994c83c7789a2ee85ca36b1661",
+    "sft_eval.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "rejected.jsonl": "27b5c62266d3cb5ee699d96d4ab97d448fd4573ba4ef7e7c4268d7a108bb2884",
+    "lineage.jsonl": "8b13fc658faa325a8767cdae8f76b7593732d082217ee316442e5778ca7032e7"
+  }
+}
