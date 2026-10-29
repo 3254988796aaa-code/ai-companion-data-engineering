@@ -25,8 +25,8 @@ def build_fixture(directory):
                      {"role": "user", "content": "这是人工编写的旧格式样例，我想练习Python。"},
                      {"role": "assistant", "content": "可以从读取并汇总CSV数据开始。"}]}}
     for name, record in cases.items():
-        (directory / f"{name}.json").write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    (directory / "08_invalid_json.json").write_text('{"synthetic_broken":', encoding="utf-8")
+        (directory / f"{name}.json").write_text(json.dumps(record, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
+    (directory / "08_invalid_json.json").write_text('{"synthetic_broken":', encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":

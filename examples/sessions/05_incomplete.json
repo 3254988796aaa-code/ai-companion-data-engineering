@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "session_id": "incomplete",
+  "nickname": "小爱",
+  "personality": "认真、耐心",
+  "source_mode": "synthetic",
+  "messages": [
+    {
+      "role": "user",
+      "content": "我的演示邮箱是 learner@example.com，演示号码13800000000。"
+    }
+  ]
+}

@@ -4,9 +4,9 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .idea/
-data/
-sessions/
-artifacts/
+/data/
+/sessions/
+/artifacts/
 .streamlit/secrets.toml
 API*key*
 user.json

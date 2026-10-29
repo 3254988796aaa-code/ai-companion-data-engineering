@@ -98,7 +98,7 @@ def run_pipeline(input_dir, output_dir, eval_percent=20):
                    "redaction_rules": [x[0] for x in RULES], "dedup": "normalized_redacted_session"},
         "output_sha256": {name: sha256((output_dir / name).read_bytes()).hexdigest() for name in outputs},
     }
-    (output_dir / "quality_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (output_dir / "quality_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     return report
 
 

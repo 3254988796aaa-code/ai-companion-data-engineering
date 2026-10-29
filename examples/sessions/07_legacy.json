@@ -1,0 +1,15 @@
+{
+  "current_session": "2026-03-01_21-37-34",
+  "nick_name": "小爱",
+  "nature": "活泼、认真",
+  "message": [
+    {
+      "role": "user",
+      "content": "这是人工编写的旧格式样例，我想练习Python。"
+    },
+    {
+      "role": "assistant",
+      "content": "可以从读取并汇总CSV数据开始。"
+    }
+  ]
+}

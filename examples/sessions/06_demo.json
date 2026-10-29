@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "session_id": "offline_demo",
+  "nickname": "小爱",
+  "personality": "认真、耐心",
+  "source_mode": "demo",
+  "messages": [
+    {
+      "role": "user",
+      "content": "我的演示邮箱是 learner@example.com，演示号码13800000000。"
+    },
+    {
+      "role": "assistant",
+      "content": "收到，我们可以用匿名信息继续练习。"
+    },
+    {
+      "role": "user",
+      "content": "请给我一个SQL练习。"
+    },
+    {
+      "role": "assistant",
+      "content": "可以先练习按订单状态分组计数。"
+    }
+  ]
+}

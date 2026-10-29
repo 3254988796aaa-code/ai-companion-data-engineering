@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "session_id": "bad_role",
+  "nickname": "小爱",
+  "personality": "认真、耐心",
+  "source_mode": "synthetic",
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "错误的起始角色。"
+    }
+  ]
+}
